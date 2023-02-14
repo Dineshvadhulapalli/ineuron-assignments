@@ -1,0 +1,155 @@
+1.What are the two values of the Boolean data type? How do you write them?
+ans.) There are two values of boolean data type ,  they are 'True' and 'False'. a boolean data type declared with "bool" keyword and can only take the values true or false.
+when the value is returned 1 than it is called true , otherwise it is called false.
+       eg:- a=0
+       b=bool(a)
+       print(b)
+      o/p:-   1=true
+
+2. What are the three different types of Boolean operators?
+ans.) there are three types of boolean operators.
+i) AND 
+ii) OR
+iii) NOT
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+ans.) Here "1" is True and "0" is False.
+i) AND 
+A    B    C               
+0    0    0       --        False and False  is  False
+0    1    0       --         False  and True is  False
+1    0    0       --        True and False is  False
+1    1    1        --       True and True  is  True
+
+
+
+  ii) OR
+A   B   C               
+0   0   0      --          False and False  is  False
+0   1   1      --          False and True  is  True
+1   0   1     --           True and False  is  True
+1   1   1    --            True and True  is  True
+
+iii) NOT
+A      B      
+0      1        --           False is True
+1      0       --             True is False
+
+
+
+4. What are the values of the following expressions?
+ans.)
+i) (5 > 4) and (3 == 5)
+ans) False                                                  
+
+ii) not(5> 4)
+ans) False
+iii) (5 > 4) or (3 == 5)
+ans)  True
+iv) not ((5 > 4) or (3 == 5))
+ans) False
+v) (True and True) and (True == False)
+ans) False
+vi) (not False) or (not True)
+ans) True
+
+5. What are the six comparison operators?
+ans.)  i)( < ) less than , ii)  ( > ) greater than , iii) ( <= ) less than or eaual to ,iv) ( >= ) greater than or equal to , v) ( != ) not equal to , vi) ( = ) equal to.
+
+6. How do you tell the difference between the equal to and assignment operators? Describe a condition and when you would use one.
+ans.) assignment operator is defined with the symbol as "=" , where as equal to operator is defined as "==". The assignment operator is used to assign the value , and equal to operator is used to compare the values between two operands.
+ both these operators are used  in depending on the sutiuation.
+ ex:- 
+     x = 6                
+    print (y)
+    o/p:- 6
+
+ii)    
+       int   x=6
+       int   y=6                               
+        if x==y:  
+           print(“True”)                                   
+        else:
+           print("false")
+      o/p:-true
+
+7. Identify the three blocks in this code:
+
+
+ans.)
+# spam = 0
+# if spam == 10:
+    print('eggs')
+if spam > 5:
+    print('bacon')
+  else:
+    print('ham')
+    print('spam')
+
+* the three blocks are everything inside the if statement , and the printing lines are print('eggs') , print('bacon') , print('ham').
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+ans.)  
+ spam=0
+for i in range (1,10):
+    spam=spam+1
+    if spam==1:
+        print("Hello")
+    if spam==2:
+        print("Howdy")
+else:
+    print("Greetings!")
+
+           
+                ( OR )
+
+if spam == 1 :
+print('Hello')
+elif spam == 2 :
+print('Howdy')
+else:
+print('Greetings!)
+
+
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+ans.) CTRL + C  or  ( break key , or external intervention )
+
+
+10. How can you tell the difference between break and continue?
+ans.)The break statement will stops the execution and comes outside of the loop . the continue statement will starts the excution by leaving the current iteration.
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+ans.)
+-----> range(10) , range(0,10), range(0,10,1)
+the above showed ranges all are prints the same value as '0 to 9' ,  and up to '9 th' value only ,not '10 th' value , because the ranges may count up to  the previous value of ending value .
+
+i) range(10) 
+* this range will prints from '0 to 9' , here the programer will get an dought that how the system will prints the range, whether it will starts with 0 or 1 like that. but , it will starts with '0' only.
+
+ii) range(0,10)
+* Here  '0'  is an starting value and '10' is an ending value.
+
+iii) range(0,10,1)
+* Here  '0'  is an starting value and '10' is an ending value and '1' is an step up value , means we can printing the ranges of outputs by using step up.
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+ans.)
+i) FOR loop
+for i in range(1,10):
+   print(i)
+ii) WHILE loop
+i=1
+while i<10:
+    print(i)
+    i=i+1
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+ans.)  spam.bacon()
+
+
+
+
+
